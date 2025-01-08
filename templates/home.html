@@ -11,22 +11,34 @@
   #banner{
     height:360px;
     object-fit:cover;
-    width:100%
+    width:100%;
+    margin-bottom:16px;
   }
     </style>
     
   </head>
 <body>
+  {%include 'nav.html'%}
+  <h1 class="text-center mt-2 mb-4" >Jovian Careers</h1>
+
+   <img class="img-fluid" id="banner" src="https://6ce1d573-9174-4b76-8eeb-bf30423f5428-00-jyilihpalq4f.pike.replit.dev/static/banner.jpg">
   <div class="container">
     <!--by using comapny name shich is passed by app-->
-  <h1 class="text-center mt-2 mb-4" >{{company_name}} Careers</h1>
-  <img class="img-fluid" id="banner" src="https://6ce1d573-9174-4b76-8eeb-bf30423f5428-00-jyilihpalq4f.pike.replit.dev/static/banner.jpg">
+
   <h2 class="text-center mt-2 mb-4">About Jovian</h2>
+    <div class="row">
+      <div class= "col-md-6">
   <p class="lead">
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
   </p>
+      </div>
+      <!-- display on mediam screens only-->
+      <div class="d-none d-md-block col-md-6">
+      <img class="img-fluid" src="/static/people.jpg" style="height:320px; border-radius:4px;">
+      </div>
+      </div>
   <h2 class="text-center mt-2 mb-4">
-  Open Positions
+  Open Positions 
   </h2>
   <div>
     <!--flask provided a template that will help us to insert dynamic data intu the html page-->
@@ -41,9 +53,11 @@
     <div class="text-center">
       <!--style="text-align:center" inline css-->
       <!-- inlign css dont need to make extra id and use it in head small properties can be used here -->
-  <button class="btn btn-primary btn-lg">Contact Us</button>
+  <a href="mailto:fatehsingh07462@gmail.com?subject=hello%20sir%20i%20want%20to%20apply%20for%20this%20job&body=kjfskld%20fjsdkfjlskdjfl%20jsd%20fjlksjdflj%20sdlkj%20fd"
+    type="button" class="btn btn-primary btn-lg">Contact Us</a>
       <p clas="mt-4">Copyright 2024</p>
       </div>
     </div>
+  {%include 'footer.html'%}
 </body> 
 </html> 
