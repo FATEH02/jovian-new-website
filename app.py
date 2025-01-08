@@ -12,7 +12,7 @@ JOBS=[{
   'id':2,
   'title':'Data Analyst',
   'location':'Delhi,India',
-  'salary':'15,00,000'
+  'salary':'1,00,000'
 },
  {
   'id':3,
@@ -24,7 +24,7 @@ JOBS=[{
   'id':4,
   'title':'Back End Engineer',
   'location':'San Francisco,USA',
-  'salary':'$120000'
+  'salary':'$10000'
 }      
      ]
 
