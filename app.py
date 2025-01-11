@@ -15,7 +15,7 @@ def load_jobs_from_db():
 @app.route("/")
 def hello_world():
     jobs = load_jobs_from_db()  # Now it will have the data
-    return render_template('home    .html', jobs=jobs)
+    return render_template('home.html', jobs=jobs)
 
 @app.route("/api/jobs")
 def list_jobs():
